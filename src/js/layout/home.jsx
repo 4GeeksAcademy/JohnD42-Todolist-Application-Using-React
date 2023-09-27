@@ -35,9 +35,9 @@ const Home = () => {
 			<h1 className="display-1">todos</h1>
 			<div className="row">
 				<div className="bordered col-2 mx-auto g-0 list">
-					<Input input={input} setInput={setInput} addToDo={addToDo} toDos={toDos} nextKey={nextKey}/>
+					<Input input={input} setInput={setInput} addToDo={addToDo}/>
 					<ul>
-						{toDos.map((value) => <ToDo value={value} deleteToDo={deleteToDo} key={nextKey} listKey={nextKey}/>)}
+						{toDos.map((value) => <ToDo value={value} deleteToDo={deleteToDo}/>)}
 						<Footer toDos={toDos}/>
 					</ul>
 				</div>
